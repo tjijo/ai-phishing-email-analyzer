@@ -1,6 +1,10 @@
-AI Phishing Email Analyzer
+# AI Phishing Email Analyzer
 
 An AI-powered cybersecurity application that analyzes email content for phishing indicators, calculates a phishing risk score, and generates explainable security assessments using OpenAI GPT.
+
+## Live Demo
+
+https://ai-phishing-email-analyzer-huqwxn3e7z8a25bjsuqwgc.streamlit.app
 
 ## Overview
 
@@ -14,7 +18,23 @@ Users can paste email content into a web interface, and the application will:
 * Generate an AI-powered security assessment
 * Provide actionable security recommendations
 
-This project demonstrates practical skills in cybersecurity, artificial intelligence, Python development, API integration, secure credential management, and web application development.
+This project demonstrates practical skills in cybersecurity, artificial intelligence, Python development, API integration, secure credential management, cloud deployment, and web application development.
+
+---
+
+## Screenshots
+
+### Homepage
+
+![Homepage](screenshots/Homepage.png)
+
+### Detection Results
+
+![Detection Results](screenshots/Results.png)
+
+### AI Security Assessment
+
+![AI Security Assessment](screenshots/Test_Message.png)
 
 ---
 
@@ -56,15 +76,17 @@ Built with Streamlit for quick and accessible analysis.
 
 ## Architecture
 
+```text
 Email Input
-↓
+      ↓
 Rule-Based Indicator Detection
-↓
+      ↓
 Risk Scoring Engine
-↓
+      ↓
 OpenAI GPT Analysis
-↓
+      ↓
 Security Assessment Output
+```
 
 ---
 
@@ -79,6 +101,12 @@ Security Assessment Output
 * Streamlit
 * OpenAI Python SDK
 * python-dotenv
+
+### Cloud & Dev Tools
+
+* Git
+* GitHub
+* Streamlit Community Cloud
 
 ### Security Concepts
 
@@ -95,9 +123,9 @@ Security Assessment Output
 ai-phishing-email-analyzer/
 ├── app.py
 ├── analyzer.py
-├── risk_scoring.py
 ├── prompts.py
 ├── requirements.txt
+├── risk_scoring.py
 │
 ├── utils/
 │   ├── indicators.py
@@ -108,9 +136,14 @@ ai-phishing-email-analyzer/
 │   └── safe_example.txt
 │
 ├── screenshots/
+│   ├── Homepage.png
+│   ├── Results.png
+│   └── Test Message.png
 │
 └── tests/
 ```
+
+---
 
 ## Installation
 
@@ -121,7 +154,7 @@ git clone https://github.com/tjijo/ai-phishing-email-analyzer.git
 cd ai-phishing-email-analyzer
 ```
 
-Create a virtual environment:
+Create and activate a virtual environment:
 
 ```bash
 python3 -m venv .venv
@@ -133,6 +166,8 @@ Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
+
+---
 
 ## Environment Variables
 
@@ -147,6 +182,8 @@ Important:
 * Never commit `.env` files to GitHub.
 * Store API keys securely.
 * Use environment variables for sensitive credentials.
+
+---
 
 ## Running the Application
 
@@ -215,6 +252,7 @@ This project demonstrates:
 * API integration
 * Environment variable management
 * Git and GitHub workflows
+* Cloud deployment
 * Streamlit web application development
 
 ---
