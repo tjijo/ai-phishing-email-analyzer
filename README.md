@@ -117,7 +117,7 @@ ai-phishing-email-analyzer/
 Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/ai-phishing-email-analyzer.git
+git clone https://github.com/tjijo/ai-phishing-email-analyzer.git
 cd ai-phishing-email-analyzer
 ```
 
